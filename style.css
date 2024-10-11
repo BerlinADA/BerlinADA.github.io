@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Sketch&display=swap');
+
+body {
+    font-family: 'londrina Sketch', cursive;
+    color: #343434; /* You can keep or modify this */
+    background-color: #eeeeee; /* Black background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.logo {
+    position: fixed;
+    top: 20px;
+    right: 5%;
+    width: 100px; /* Adjust size as needed */
+    z-index: 1000; /* Ensure it stays above other content */
+    /* filter: grayscale(100%); Apply black and white filter */
+}
+
+.container {
+    max-width: 1200px;
+    padding: 20px;
+}
+
+#intro {
+    text-align: center;
+    padding: 100px 0;
+}
+
+#intro h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+#projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.list-heading-text {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.project-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100%; /* Full width of the page */
+}
+
+.project {
+    width: 90%;
+    background-color: rgba(255, 255, 255, 0.116);
+    margin: 5px;
+    padding: 8px;
+    border: 1px solid #ddd3;
+    border-radius: 2px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    
+}
+
+.card-name {
+    font-size: large;
+    display: none;
+}
+
+.project:hover {
+    transform: translateY(-3px);
+    cursor: pointer; /* Changes the cursor to indicate a link */
+}
+
+.project h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    cursor: pointer; /* Changes the cursor to indicate a link */
+}
+
+footer {
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    text-align: center;
+    padding: 10px;
+    background-color: #3330; /* Make background visible */
+    color: rgb(180, 180, 180);
+    position: fixed;
+    bottom: 0;
+    max-width: 1200px;
+    z-index: 999;
+    display: flex;
+    left: 50%; /* Shift footer to the middle */
+    transform: translateX(-50%); /* Adjust to center */
+}
+
+.rights {
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center; /* Center the icons */
+    margin: 20px 0; /* Add some spacing */
+}
+
+.icon {
+    margin: 0 10px; /* Space between icons */
+}
+
+.icon img {
+    width: 40px; /* Adjust size as needed */
+    height: auto;
+}
