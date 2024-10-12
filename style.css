@@ -1,8 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Londrina+Sketch&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Forum&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
+
 
 body {
-    font-family: 'londrina Sketch', cursive;
+    font-family: "Reenie Beanie", cursive ;
     color: #343434; /* You can keep or modify this */
     background-color: #eeeeee; /* Black background */
     display: flex;
@@ -28,7 +33,7 @@ body {
 
 #intro {
     text-align: center;
-    padding: 0 0;
+    padding: 7vh;
 }
 
 #intro h1 {
@@ -40,10 +45,22 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+
+
+}
+
+.char-drift span {
+    display: inline-block;
+    position: relative;
+    transition: transform 0.5s ease-in-out;
 }
 
 .list-heading-text {
-    font-size: 1.5rem;
+    /* font */
+    font-family: "DotGothic16", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
     margin-bottom: 20px;
 }
 
@@ -63,6 +80,11 @@ body {
     border-radius: 2px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
+    /* font */
+    font-family: "DotGothic16", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1vh;
 }
 
 .card-name {
@@ -76,7 +98,11 @@ body {
 }
 
 .project h2 {
-    font-size: 1.5rem;
+    /* font */
+    font-family: "DotGothic16", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
     margin-bottom: 10px;
     cursor: pointer; /* Changes the cursor to indicate a link */
 }
@@ -106,7 +132,7 @@ footer {
 .social-icons {
     position: fixed;
     right: 20px;
-    top: 75%; /* Moved 10% lower in the window */
+    top: 75%; /* Moved 25% lower in the window */
     transform: translate(50%, -50%);
     display: flex;
     flex-direction: column;
