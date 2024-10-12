@@ -5,12 +5,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Forum&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
 
+* {
+    margin: 0;
+    padding: 0; 
+}
 
 body {
     font-family: "Reenie Beanie", cursive ;
     color: #343434; /* You can keep or modify this */
     background-color: #eeeeee; /* Black background */
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -45,8 +50,6 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-
-
 }
 
 .char-drift span {
@@ -108,24 +111,17 @@ body {
 }
 
 footer {
-    justify-content: center; /* Center content horizontally */
-    align-items: center; /* Center content vertically */
     text-align: center;
-    padding: 10px;
-    background-color: #3330; /* Make background visible */
-    color: rgb(180, 180, 180);
-    position: fixed;
+    background-color: #fcfcfc93;
+    width: 100%;
+    position: absolute;
     bottom: 0;
-    max-width: 1200px;
-    z-index: 999;
-    display: flex;
-    left: 50%; /* Shift footer to the middle */
-    transform: translateX(-50%); /* Adjust to center */
 }
 
 .rights {
-    margin-top: 20px;
-    padding: 10px;
+    padding: 5px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 0.8rem;
 }
 
 /* Added social-icons container to place icons vertically on the right */
@@ -169,3 +165,27 @@ footer {
     border-radius: 2px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+ 
+/* Styles for devices with width less than 768px (tablets and mobile phones) */
+@media (max-width: 768px) {
+    #intro {
+        text-align: center;
+        padding: 7vh;
+    }
+    
+    #intro h1 {
+        font-size: 3rem;
+        max-inline-size: 10vw;
+        margin-bottom: 20px;
+    }
+
+    .char-drift {
+        white-space: nowrap; /* Prevent line breaks inside this element */
+    }
+    
+    .char-drift span {
+        /* display: inline-block; */
+        position: relative;
+        transition: transform 0.5s ease-in-out;
+    }
+} 
