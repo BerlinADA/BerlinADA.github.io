@@ -114,8 +114,9 @@ footer {
     text-align: center;
     background-color: #fcfcfc93;
     width: 100%;
-    position: absolute;
+    position: static;
     bottom: 0;
+    margin-top: auto; /* Ensures it stays at the bottom while being static */
 }
 
 .rights {
