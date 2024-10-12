@@ -135,9 +135,9 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: stretch;
-    gap: 18px; /* Adds space between the icons */
+    gap: 5vh; /* Adds space between the icons */
     border: 1px solid rgba(13, 13, 13, 0.2);
-    padding: 20px 30px 20px 3px;
+    padding: 14px 24px 14px 2px;
     border-radius: 5px;
     background-color: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(5px);
@@ -151,6 +151,7 @@ footer {
 
 .icon img {
     width: 40px; /* Adjust size as needed */
+    max-width: 8vw;
     height: auto;
 }
 
@@ -189,5 +190,9 @@ footer {
         /* display: inline-block; */
         position: relative;
         transition: transform 0.5s ease-in-out;
+    }
+
+    .social-icons {
+        top: 50%; 
     }
 } 
